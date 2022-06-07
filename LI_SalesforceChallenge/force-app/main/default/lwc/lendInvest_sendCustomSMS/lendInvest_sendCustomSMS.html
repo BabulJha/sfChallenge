@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  title="Send a text to this customer" icon-name="standard:action_list_component">
+        <div class="slds-grid slds-grid_vertical">
+            <div class="slds-col slds-size_1-of-1">
+                <lightning-input type="text" name="smsBody" data-id="smsBody" label="Your Message"></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-1">
+                <lightning-button variant="brand" label="Send SMS" title="Send SMS" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            </div>
+        </div>
+
+        <div class="slds-m-vertical_medium">
+            <p>{response}</span></p>
+        </div>
+       
+    </lightning-card>
+</template>
